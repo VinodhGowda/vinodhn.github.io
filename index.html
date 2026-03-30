@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vinodh Nagarajaiah — Principal Engineer | AI/ML | Cloud Architect</title>
+<meta name="description" content="Principal-level Software Engineer with 17+ years building enterprise-grade systems. M.Sc. AI/ML (With Distinction). Bengaluru, India.">
+<meta property="og:title" content="Vinodh Nagarajaiah — Principal Engineer | AI/ML">
+<meta property="og:description" content="17+ years enterprise engineering + M.Sc. AI/ML. Building at the intersection of backend systems and artificial intelligence.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vinodhn.dev">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#0a0a0b;--bg2:#111113;--bg3:#1a1a1d;
+  --text:#e8e6e3;--text2:#9a9590;--text3:#5a5550;
+  --accent:#c9a96e;--accent2:#e8cc8c;--accent-dim:rgba(201,169,110,0.12);
+  --font:"DM Sans",system-ui,sans-serif;
+  --serif:"DM Serif Display",Georgia,serif;
+  --max:880px;
+}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none;transition:color .2s}
+a:hover{color:var(--accent2)}
+::selection{background:var(--accent);color:var(--bg)}
+
+.container{max-width:var(--max);margin:0 auto;padding:0 2rem}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 0;transition:all .3s}
+nav.scrolled{background:rgba(10,10,11,0.92);backdrop-filter:blur(20px);border-bottom:1px solid rgba(201,169,110,0.08)}
+nav .container{display:flex;justify-content:space-between;align-items:center}
+.nav-name{font-family:var(--serif);font-size:1.25rem;color:var(--text);letter-spacing:0.02em}
+.nav-links{display:flex;gap:2rem;align-items:center}
+.nav-links a{font-size:0.85rem;color:var(--text2);letter-spacing:0.06em;text-transform:uppercase;font-weight:400}
+.nav-links a:hover{color:var(--accent)}
+.nav-cta{background:transparent;border:1px solid var(--accent);color:var(--accent);padding:0.5rem 1.25rem;font-size:0.8rem;letter-spacing:0.08em;text-transform:uppercase;cursor:pointer;font-family:var(--font);transition:all .25s}
+.nav-cta:hover{background:var(--accent);color:var(--bg)}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:8rem 0 6rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-40%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,rgba(201,169,110,0.04) 0%,transparent 70%);pointer-events:none}
+.hero-label{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;font-weight:500}
+.hero h1{font-family:var(--serif);font-size:clamp(2.5rem,6vw,4.2rem);color:var(--text);line-height:1.15;margin-bottom:1.5rem;max-width:700px}
+.hero h1 span{color:var(--accent)}
+.hero-sub{font-size:1.1rem;color:var(--text2);max-width:560px;line-height:1.8;margin-bottom:2.5rem;font-weight:300}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;font-family:var(--font);font-weight:500;border:none;cursor:pointer;transition:all .25s}
+.btn-primary{background:var(--accent);color:var(--bg)}
+.btn-primary:hover{background:var(--accent2);color:var(--bg)}
+.btn-outline{background:transparent;border:1px solid var(--text3);color:var(--text2)}
+.btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+.hero-meta{margin-top:4rem;display:flex;gap:3rem;flex-wrap:wrap}
+.hero-meta-item{display:flex;flex-direction:column}
+.hero-meta-val{font-family:var(--serif);font-size:1.8rem;color:var(--text)}
+.hero-meta-label{font-size:0.75rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem}
+
+/* SECTIONS */
+section{padding:6rem 0}
+.section-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-weight:500}
+.section-title{font-family:var(--serif);font-size:clamp(1.8rem,4vw,2.5rem);color:var(--text);margin-bottom:2rem;line-height:1.2}
+.divider{width:100%;height:1px;background:linear-gradient(to right,transparent,var(--text3),transparent);opacity:0.3}
+
+/* ABOUT */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.about-text{font-size:1rem;color:var(--text2);line-height:1.9;font-weight:300}
+.about-text strong{color:var(--text);font-weight:500}
+.about-highlights{display:flex;flex-direction:column;gap:1rem}
+.highlight-card{background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:1.25rem 1.5rem;transition:border-color .3s}
+.highlight-card:hover{border-color:rgba(201,169,110,0.2)}
+.highlight-card h4{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.4rem;font-weight:500}
+.highlight-card p{font-size:0.9rem;color:var(--text2);font-weight:300;line-height:1.6}
+
+/* EXPERIENCE */
+.timeline{position:relative;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:var(--text3);opacity:0.2}
+.timeline-item{position:relative;padding-bottom:2.5rem}
+.timeline-item::before{content:'';position:absolute;left:-2rem;top:0.6rem;width:7px;height:7px;background:var(--accent);border-radius:50%;transform:translateX(-3px)}
+.timeline-item.current::before{box-shadow:0 0 0 4px var(--accent-dim)}
+.timeline-role{font-size:1.1rem;font-weight:500;color:var(--text)}
+.timeline-company{font-size:0.95rem;color:var(--accent);margin-top:0.15rem}
+.timeline-date{font-size:0.8rem;color:var(--text3);margin-top:0.2rem}
+.timeline-desc{font-size:0.88rem;color:var(--text2);margin-top:0.6rem;line-height:1.7;font-weight:300;max-width:600px}
+
+/* EDUCATION */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:2rem}
+.edu-card{background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:2rem;transition:border-color .3s}
+.edu-card:hover{border-color:rgba(201,169,110,0.2)}
+.edu-card .degree{font-family:var(--serif);font-size:1.15rem;color:var(--text);line-height:1.3;margin-bottom:0.5rem}
+.edu-card .school{font-size:0.85rem;color:var(--accent);margin-bottom:0.3rem}
+.edu-card .detail{font-size:0.82rem;color:var(--text2);font-weight:300;line-height:1.6}
+.edu-card .badge{display:inline-block;background:var(--accent-dim);color:var(--accent);font-size:0.7rem;letter-spacing:0.08em;text-transform:uppercase;padding:0.3rem 0.8rem;margin-top:0.8rem;font-weight:500}
+
+/* RESEARCH */
+.research-box{background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:2.5rem;margin-top:1rem}
+.research-box h3{font-family:var(--serif);font-size:1.2rem;color:var(--text);line-height:1.4;margin-bottom:1rem}
+.research-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:1.5rem}
+.stat{text-align:center}
+.stat-val{font-family:var(--serif);font-size:1.5rem;color:var(--accent)}
+.stat-label{font-size:0.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.08em;margin-top:0.2rem}
+
+/* CONNECT */
+.connect-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2rem}
+.connect-card{background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:1.5rem;text-align:center;transition:all .3s;cursor:pointer;text-decoration:none}
+.connect-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.connect-card .icon{font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:0.5rem;font-weight:500}
+.connect-card .label{font-size:0.85rem;color:var(--text2);font-weight:300}
+
+/* FOOTER */
+footer{padding:3rem 0;text-align:center}
+footer p{font-size:0.8rem;color:var(--text3);font-weight:300}
+footer a{color:var(--accent)}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  .nav-links a:not(.nav-cta){display:none}
+  .about-grid,.edu-grid{grid-template-columns:1fr}
+  .research-stats{grid-template-columns:repeat(2,1fr)}
+  .connect-grid{grid-template-columns:repeat(2,1fr)}
+  .hero-meta{gap:2rem}
+  .container{padding:0 1.25rem}
+}
+
+/* ANIMATIONS */
+.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="container">
+    <div class="nav-name">VN</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#research">Research</a>
+      <a href="#connect">Connect</a>
+      <button class="nav-cta" onclick="window.open('mailto:vinodh.nagaraj@gmail.com')">Get in touch</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-label">Principal Engineer &bull; Cloud Architect &bull; AI/ML Researcher</div>
+    <h1>I build systems that <span>scale</span>, and study how to make them <span>intelligent</span>.</h1>
+    <p class="hero-sub">17+ years architecting enterprise backends in Java, Spring Boot, Kafka, and AWS. M.Sc. in AI/ML (With Distinction) specialising in Generative AI &amp; Agentic AI. Currently shaping the future of cloud security at F-Secure.</p>
+    <div class="hero-actions">
+      <a href="#connect" class="btn btn-primary">Let's connect</a>
+      <a href="#research" class="btn btn-outline">View my research</a>
+    </div>
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-val">17+</div>
+        <div class="hero-meta-label">Years engineering</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-val">99.99%</div>
+        <div class="hero-meta-label">SLA delivered</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-val">52,844</div>
+        <div class="hero-meta-label">LLM evaluations in thesis</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-val">15</div>
+        <div class="hero-meta-label">Engineers led</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="about">
+  <div class="container fade-in">
+    <div class="section-label">About</div>
+    <div class="section-title">Backend engineer who went back to school for AI.</div>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I've spent 17 years building production systems that process data at scale &mdash; real-time security monitoring on Kafka, API platforms serving enterprise customers at 99.99% SLA, authentication protocols analysed for replay and timing attacks.</p>
+        <br>
+        <p>At 37, I went back to school. Completed an <strong>M.Sc. in AI/ML from Liverpool John Moores University</strong> (With Distinction, via UpGrad) and an <strong>Executive PG Diploma from IIIT Bangalore</strong> (3.7/4.0, via UpGrad), both specialising in Generative AI &amp; Agentic AI.</p>
+        <br>
+        <p>My thesis showed you can optimise LLMs for <strong>$51 instead of $2,000+</strong>. I use Claude Code, Cursor, and GitHub Copilot daily with quality-gating workflows. I built LLM-powered tools at company hackathons. I'm looking for roles where 17 years of production expertise and AI education both matter.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-card">
+          <h4>Production AI tooling</h4>
+          <p>Claude Code, Cursor, Claude Desktop (MCP), GitHub Copilot &mdash; daily professional use with quality-gating standards for AI-generated code.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Hackathon AI</h4>
+          <p>AI-CodeMedic: LLM-powered AIOps debugging engine (HackWeek 2nd place, evaluated for production). Built with Java 21, Spring Boot 3.x, OpenAI APIs.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>Academic AI</h4>
+          <p>RAG semantic search (LangChain, FAISS, ChromaDB), gesture recognition CNNs (94% accuracy), NLP recommendation systems, melanoma detection.</p>
+        </div>
+        <div class="highlight-card">
+          <h4>What I haven't done (yet)</h4>
+          <p>No production ML deployment. No MLOps. My AI is academic + hackathon + daily tooling. I'm honest about this because it matters.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="experience">
+  <div class="container fade-in">
+    <div class="section-label">Experience</div>
+    <div class="section-title">Six companies. Three countries. One thread: building at scale.</div>
+    <div class="timeline">
+      <div class="timeline-item current">
+        <div class="timeline-role">Lead Cloud Specialist</div>
+        <div class="timeline-company">F-Secure India, Bengaluru</div>
+        <div class="timeline-date">June 2023 &ndash; Present</div>
+        <div class="timeline-desc">Converging 40+ security services into a unified platform. 99.99% SLA, 20% cost reduction. Scaled throughput 12 &rarr; 200 TPS (16.7x). Built real-time monitoring at 1,000+ events/sec on Kafka. Introduced AI-assisted development within the team. Led 15-engineer cross-geography team.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Senior Staff Engineer</div>
+        <div class="timeline-company">Lookout India Technologies, Bengaluru</div>
+        <div class="timeline-date">Sept 2021 &ndash; June 2023</div>
+        <div class="timeline-desc">Enterprise mobile security platform on AWS. Backend infrastructure design, cross-team architectural decisions, API standardisation.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Technical Lead</div>
+        <div class="timeline-company">Globant India, Bengaluru</div>
+        <div class="timeline-date">Sept 2018 &ndash; Sept 2021</div>
+        <div class="timeline-desc">Led 8-10 engineers building backend services for a major US telecom client. Spring Boot, Kafka, Elasticsearch. Reduced production defects by 35%.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Senior Technical Advisor</div>
+        <div class="timeline-company">Finastra, Bengaluru</div>
+        <div class="timeline-date">July 2017 &ndash; Sept 2018</div>
+        <div class="timeline-desc">Core banking platform modernisation. Legacy-to-microservices migration architecture.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Senior Software Engineer</div>
+        <div class="timeline-company">Robert Bosch Engineering, Bengaluru</div>
+        <div class="timeline-date">July 2011 &ndash; July 2017</div>
+        <div class="timeline-desc">Connected vehicle platform processing telemetry from 100K+ vehicles. IoT event-driven architecture, real-time diagnostics.</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-role">Software Engineer</div>
+        <div class="timeline-company">Tata Consultancy Services, Bengaluru</div>
+        <div class="timeline-date">Oct 2008 &ndash; June 2011</div>
+        <div class="timeline-desc">Enterprise Java applications for banking and telecom clients. Where it all started.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="education">
+  <div class="container fade-in">
+    <div class="section-label">Education</div>
+    <div class="section-title">Went back at 37. Came out with distinction.</div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="degree">M.Sc. Artificial Intelligence / Machine Learning</div>
+        <div class="school">Liverpool John Moores University (LJMU), UK &bull; via UpGrad</div>
+        <div class="detail">With Distinction (72%) &bull; January 2026<br>Specialisation: Generative AI &amp; Agentic AI</div>
+        <div class="badge">Thesis under Springer review</div>
+      </div>
+      <div class="edu-card">
+        <div class="degree">Executive PG Diploma, ML &amp; AI</div>
+        <div class="school">IIIT Bangalore &bull; via UpGrad</div>
+        <div class="detail">CGPA 3.7/4.0 &bull; December 2024<br>Specialisation: Generative AI &amp; Agentic AI</div>
+        <div class="badge">Academic projects: RAG, CNNs, NLP</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="research">
+  <div class="container fade-in">
+    <div class="section-label">Research</div>
+    <div class="section-title">Can you optimise an LLM for $51?</div>
+    <div class="research-box">
+      <h3>&ldquo;Resource-Efficient Automated Prompt Optimisation for LLM-Based Text Summarisation&rdquo;</h3>
+      <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-top:0.5rem">LJMU M.Sc. Thesis &bull; 2025 &bull; Under review for Springer publication</p>
+      <p style="font-size:0.92rem;color:var(--text2);font-weight:300;line-height:1.8;margin-top:1rem">Five-stage automated methodology that achieved statistically significant LLM improvements (p &lt; 0.001, Cohen&rsquo;s d &gt; 0.8) for $51.12 total &mdash; 40x cheaper than fine-tuning. Two-tier model strategy (Claude Haiku for exploration, Sonnet for validation) with progressive filtering. No specialised hardware required.</p>
+      <div class="research-stats">
+        <div class="stat">
+          <div class="stat-val">52,844</div>
+          <div class="stat-label">Evaluations</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">$51</div>
+          <div class="stat-label">Total cost</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">99.8%</div>
+          <div class="stat-label">Success rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">+4.62%</div>
+          <div class="stat-label">ROUGE-2 gain</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="certs">
+  <div class="container fade-in">
+    <div class="section-label">Certifications</div>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem">
+      <div style="background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Certified ScrumMaster (CSM) &bull; Scrum Alliance</div>
+      <div style="background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">AWS Certified AI Practitioner</div>
+      <div style="background:var(--bg2);border:1px solid rgba(201,169,110,0.06);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Microsoft Azure Fundamentals</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="connect">
+  <div class="container fade-in">
+    <div class="section-label">Connect</div>
+    <div class="section-title">Let's build something together.</div>
+    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:500px;line-height:1.8;margin-bottom:1rem">I'm exploring Principal/Staff Engineer roles at the intersection of backend engineering and AI. Open to Bengaluru, remote, or international opportunities.</p>
+    <div class="connect-grid">
+      <a href="mailto:vinodh.nagaraj@gmail.com" class="connect-card">
+        <div class="icon">Email</div>
+        <div class="label">vinodh.nagaraj@gmail.com</div>
+      </a>
+      <a href="https://www.linkedin.com/in/vinodh-nagarajaiah/" target="_blank" rel="noopener" class="connect-card">
+        <div class="icon">LinkedIn</div>
+        <div class="label">/in/vinodh-nagarajaiah</div>
+      </a>
+      <a href="https://github.com/techexorcist" target="_blank" rel="noopener" class="connect-card">
+        <div class="icon">GitHub</div>
+        <div class="label">techexorcist</div>
+      </a>
+      <a href="https://medium.com/@vinodhgowda" target="_blank" rel="noopener" class="connect-card">
+        <div class="icon">Medium</div>
+        <div class="label">@vinodhgowda</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Vinodh Nagarajaiah &bull; Built with intention, not templates &bull; <a href="https://ariesbytes.com">ariesbytes.com</a></p>
+  </div>
+</footer>
+
+<script>
+// Nav scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Fade-in on scroll
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Smooth scroll for nav links
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
+</script>
+
+</body>
+</html>

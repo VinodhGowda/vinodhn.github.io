@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinodh Nagarajaiah — Principal Engineer | AI/ML | Cloud Architect</title>
-<meta name="description" content="Principal-level Software Engineer with 17+ years building enterprise-grade systems. M.Sc. AI/ML (With Distinction). Bengaluru, India.">
-<meta property="og:title" content="Vinodh Nagarajaiah — Principal Engineer | AI/ML">
-<meta property="og:description" content="17+ years enterprise engineering + M.Sc. AI/ML. Building at the intersection of backend systems and artificial intelligence.">
+<title>Vinodh Nagarajaiah — Polyglot Engineer | AI/ML | Cloud Architect</title>
+<meta name="description" content="Polyglot Software Engineer with 17+ years building enterprise-grade systems in Java, Go, Scala & Python. M.Sc. AI/ML (With Distinction). Bengaluru, India.">
+<meta property="og:title" content="Vinodh Nagarajaiah — Polyglot Engineer | AI/ML">
+<meta property="og:description" content="17+ years enterprise engineering across 5 industries + M.Sc. AI/ML. Building at the intersection of backend systems and artificial intelligence.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vinodhn.dev">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,6 +21,11 @@
   --card-border:rgba(0,0,0,0.08);--card-border-hover:rgba(139,105,20,0.25);
   --nav-bg:rgba(250,249,247,0.92);--nav-border:rgba(0,0,0,0.06);
   --glow:rgba(139,105,20,0.03);
+  --teal:#0d7377;--teal-dim:rgba(13,115,119,0.08);
+  --coral:#b5451b;--coral-dim:rgba(181,69,27,0.08);
+  --blue:#2563a0;--blue-dim:rgba(37,99,160,0.08);
+  --green:#2d7a3a;--green-dim:rgba(45,122,58,0.08);
+  --purple:#6b3fa0;--purple-dim:rgba(107,63,160,0.08);
   --font:"DM Sans",system-ui,sans-serif;
   --serif:"DM Serif Display",Georgia,serif;
   --max:100%;
@@ -32,6 +37,11 @@
   --card-border:rgba(201,169,110,0.06);--card-border-hover:rgba(201,169,110,0.2);
   --nav-bg:rgba(10,10,11,0.92);--nav-border:rgba(201,169,110,0.08);
   --glow:rgba(201,169,110,0.04);
+  --teal:#5dcaa5;--teal-dim:rgba(93,202,165,0.12);
+  --coral:#f0997b;--coral-dim:rgba(240,153,123,0.12);
+  --blue:#85b7eb;--blue-dim:rgba(133,183,235,0.12);
+  --green:#97c459;--green-dim:rgba(151,196,89,0.12);
+  --purple:#afa9ec;--purple-dim:rgba(175,169,236,0.12);
 }
 html{scroll-behavior:smooth;background:var(--bg)}
 body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease}
@@ -134,6 +144,11 @@ footer a{color:var(--accent)}
   .connect-grid{grid-template-columns:repeat(2,1fr)}
   .hero-meta{gap:2rem}
   .container{padding:0 1.5rem}
+  #stack [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  #education .edu-grid{grid-template-columns:1fr !important}
+  #writing [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  #architecture [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  #value [style*="grid-template-columns"]{grid-template-columns:1fr !important}
 }
 
 /* ANIMATIONS */
@@ -176,9 +191,9 @@ footer a{color:var(--accent)}
 
 <section class="hero">
   <div class="container">
-    <div class="hero-label">Principal Engineer &bull; Cloud Architect &bull; AI/ML Researcher</div>
+    <div class="hero-label">Polyglot Engineer &bull; Cloud Architect &bull; AI/ML Researcher</div>
     <h1>I build systems that <span>scale</span>, and study how to make them <span>intelligent</span>.</h1>
-    <p class="hero-sub">17+ years architecting enterprise backends in Java, Spring Boot, Kafka, and AWS. M.Sc. in AI/ML (With Distinction) specialising in Generative AI &amp; Agentic AI. Currently shaping the future of cloud security at F-Secure.</p>
+    <p class="hero-sub">17+ years shipping production backends in Java, Go, Scala &amp; Python across five industries. M.Sc. in AI/ML (With Distinction) specialising in Generative AI &amp; Agentic AI. Currently shaping the future of cloud security at F-Secure.</p>
     <div class="hero-actions">
       <a href="#connect" class="btn btn-primary">Let's connect</a>
       <a href="#research" class="btn btn-outline">View my research</a>
@@ -189,7 +204,7 @@ footer a{color:var(--accent)}
         <div class="hero-meta-label">Years engineering</div>
       </div>
       <div class="hero-meta-item">
-        <div class="hero-meta-val">99.99%</div>
+        <div class="hero-meta-val">99.9%</div>
         <div class="hero-meta-label">SLA delivered</div>
       </div>
       <div class="hero-meta-item">
@@ -212,30 +227,89 @@ footer a{color:var(--accent)}
     <div class="section-title">Backend engineer who went back to school for AI.</div>
     <div class="about-grid">
       <div class="about-text">
-        <p>I've spent 17 years building production systems that process data at scale &mdash; real-time security monitoring on Kafka, API platforms serving enterprise customers at 99.99% SLA, authentication protocols analysed for replay and timing attacks.</p>
+        <p>I'm a <strong>polyglot engineer</strong> &mdash; Java is my first language, but I think in systems, not syntax. Production code in <strong>Java, Go, Scala, and Python</strong>. I've written backend services in Spring Boot, Play Framework, and raw Go. I pick the right tool for the problem, not the one I'm most comfortable with.</p>
         <br>
-        <p>At 37, I went back to school. Completed an <strong>M.Sc. in AI/ML from Liverpool John Moores University</strong> (With Distinction, via UpGrad) and an <strong>Executive PG Diploma from IIIT Bangalore</strong> (3.7/4.0, via UpGrad), both specialising in Generative AI &amp; Agentic AI.</p>
+        <p>17 years building production systems across cybersecurity, fintech, automotive, and telecom &mdash; real-time monitoring on Kafka, authentication protocols analysed for replay and timing attacks, enterprise platforms at 99.9% SLA.</p>
         <br>
-        <p>My thesis showed you can optimise LLMs for <strong>$51 instead of $2,000+</strong>. I use Claude Code, Cursor, and GitHub Copilot daily with quality-gating workflows. I built LLM-powered tools at company hackathons. I'm looking for roles where 17 years of production expertise and AI education both matter.</p>
+        <p>At 37, I went back to school. Completed an <strong>M.Sc. in AI/ML from Liverpool John Moores University</strong> (With Distinction, via UpGrad) and an <strong>Executive PG Diploma from IIIT Bangalore</strong> (3.7/4.0, via UpGrad), both specialising in Generative AI &amp; Agentic AI. My thesis showed you can optimise LLMs for <strong>$51 instead of $2,000+</strong>.</p>
+        <br>
+        <p>I write about what I learn. I build tools that solve real problems. I use Claude Code, Cursor, and GitHub Copilot daily &mdash; not as a crutch, but with quality-gating workflows that keep code honest.</p>
       </div>
       <div class="about-highlights">
-        <div class="highlight-card">
-          <h4>Production AI tooling</h4>
-          <p>Claude Code, Cursor, Claude Desktop (MCP), GitHub Copilot &mdash; daily professional use with quality-gating standards for AI-generated code.</p>
+        <div class="highlight-card" style="border-left:3px solid var(--teal)">
+          <h4 style="color:var(--teal)">Polyglot engineer</h4>
+          <p>Java, Go, Scala, Python &mdash; production code across all four. Spring Boot, Play Framework, Kafka, Elasticsearch. I don't have a comfort zone; I have a toolkit.</p>
         </div>
-        <div class="highlight-card">
-          <h4>Hackathon AI</h4>
-          <p>AI-CodeMedic: LLM-powered AIOps debugging engine (HackWeek 2nd place, evaluated for production). Built with Java 21, Spring Boot 3.x, OpenAI APIs.</p>
+        <div class="highlight-card" style="border-left:3px solid var(--coral)">
+          <h4 style="color:var(--coral)">AIOps at F-Secure</h4>
+          <p>AI-CodeMedic: LLM-powered AIOps debugging engine &mdash; auto-scans logs, diagnoses bugs, generates PRs. HackWeek 2nd place, actively being evaluated for production. Java 21 + Spring Boot 3.x + OpenAI APIs.</p>
         </div>
-        <div class="highlight-card">
-          <h4>Academic AI</h4>
+        <div class="highlight-card" style="border-left:3px solid var(--purple)">
+          <h4 style="color:var(--purple)">Academic AI</h4>
           <p>RAG semantic search (LangChain, FAISS, ChromaDB), gesture recognition CNNs (94% accuracy), NLP recommendation systems, melanoma detection.</p>
         </div>
-        <div class="highlight-card">
-          <h4>What I haven't done (yet)</h4>
-          <p>No production ML deployment. No MLOps. My AI is academic + hackathon + daily tooling. I'm honest about this because it matters.</p>
+        <div class="highlight-card" style="border-left:3px solid var(--blue)">
+          <h4 style="color:var(--blue)">The AI journey</h4>
+          <p>17 years of production engineering + 2 years of formal AI education. Building toward production AI systems &mdash; from thesis research to AIOps tools to daily AI-augmented development.</p>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding:4rem 0">
+  <div class="container">
+    <div style="max-width:800px;margin:0 auto;text-align:center">
+      <div style="font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.8rem);color:var(--text);line-height:1.5;font-style:italic">&ldquo;AI isn&rsquo;t a threat to me &mdash; it&rsquo;s a force to be leveraged responsibly and with intention.&rdquo;</div>
+      <div style="margin-top:1rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3)">My stance on AI</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="value">
+  <div class="container fade-in">
+    <div class="section-label">What I bring</div>
+    <div class="section-title">Not just skills. A way of thinking.</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1rem">
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--teal);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--teal);margin-bottom:0.5rem">17</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">Years of backend engineering</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">Java, Go, Scala, Python &mdash; production systems across five industries. I've seen what breaks at scale and know how to build so it doesn't.</p>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--blue);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--blue);margin-bottom:0.5rem">5</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">Industries. One architecture mindset.</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">Designed systems in cybersecurity, mobile security, fintech, automotive IoT, and telecom. Each domain taught a different constraint &mdash; latency, compliance, real-time processing, scale. I bring that cross-industry lens to every whiteboard session.</p>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--green);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--green);margin-bottom:0.5rem">6</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">Companies. Engineer to technical lead.</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">Started writing code at TCS. Led teams at Globant. Architected platforms at Lookout and F-Secure. At every stage, I shipped on deadline &mdash; 45-day sprints delivered early, zero SLA breaches, teams of 5 to 15 unblocked and aligned.</p>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--coral);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--coral);margin-bottom:0.5rem">M.Sc.</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">AI/ML with Distinction</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">Not a weekend course. Two years of formal education in GenAI, Agentic AI, deep learning, and NLP. Thesis under review for Springer. I didn't just learn AI &mdash; I researched it.</p>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--purple);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--purple);margin-bottom:0.5rem">$51</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">Cost-conscious AI thinking</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">My thesis optimised LLMs for $51 instead of $2,000+. I bring the same instinct to every AI decision &mdash; what's the cheapest way to get the best result without cutting corners?</p>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--accent);padding:1.5rem">
+        <div style="font-size:1.6rem;font-family:var(--serif);color:var(--accent);margin-bottom:0.5rem">&rarr;</div>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.5rem">The bridge</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.6">Most AI engineers lack production experience. Most production engineers lack AI education. I have both &mdash; and the enthusiasm to bring them together at scale.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -245,45 +319,117 @@ footer a{color:var(--accent)}
 <section id="experience">
   <div class="container fade-in">
     <div class="section-label">Experience</div>
-    <div class="section-title">Six companies. Three countries. One thread: building at scale.</div>
+    <div class="section-title">Six companies. Five industries. One thread: building at scale.</div>
     <div class="timeline">
       <div class="timeline-item current">
         <div class="timeline-role">Lead Cloud Specialist</div>
-        <div class="timeline-company">F-Secure India, Bengaluru</div>
+        <div class="timeline-company">F-Secure India, Bengaluru (Remote) &bull; Cybersecurity</div>
         <div class="timeline-date">June 2023 &ndash; Present</div>
-        <div class="timeline-desc">Converging 40+ security services into a unified platform. 99.99% SLA, 20% cost reduction. Scaled throughput 12 &rarr; 200 TPS (16.7x). Built real-time monitoring at 1,000+ events/sec on Kafka. Introduced AI-assisted development within the team. Led 15-engineer cross-geography team.</div>
+        <div class="timeline-desc">Architecting the migration and convergence of 40+ services into a unified platform, collaborating with product leads and engineering managers to safeguard the 2026 convergence deadline. Designed two enterprise authentication protocols &mdash; session-based PKCE with Redis caching and stateless HMAC-SHA256 with hybrid salt protection &mdash; with security analysis covering replay attacks, timing attacks, and reverse engineering vectors. Delivered real-time threat monitoring processing 1,000+ events/sec on Kafka with 99.9% availability and zero SLA breaches, optimising backend services for a 50% increase in event volume handling while saving 10% in scaling costs. Built a subscription-based breach reporting service serving 100,000+ users at 99.95% uptime, reducing data retrieval times by 25%. Co-developed AI-CodeMedic during AI HackWeek (2nd place) &mdash; an LLM-powered AIOps engine achieving 60% reduction in debugging effort, currently being evaluated for production adoption. Consolidated cloud infrastructure, lowering costs by 20%. Reduced detection-to-notification time by 40% for real-time alerts. Implemented failure recovery strategies reducing operational disruptions by 50%. Led teams of 5&ndash;15 engineers across multiple concurrent projects, consistently delivering ahead of schedule.</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-role">Senior Staff Engineer</div>
-        <div class="timeline-company">Lookout India Technologies, Bengaluru</div>
+        <div class="timeline-company">Lookout India Technologies, Bengaluru (Remote) &bull; Mobile Security</div>
         <div class="timeline-date">Sept 2021 &ndash; June 2023</div>
-        <div class="timeline-desc">Enterprise mobile security platform on AWS. Backend infrastructure design, cross-team architectural decisions, API standardisation.</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-role">Technical Lead</div>
-        <div class="timeline-company">Globant India, Bengaluru</div>
+        <div class="timeline-company">Globant India, Bengaluru (Remote) &bull; Technology Consulting</div>
         <div class="timeline-date">Sept 2018 &ndash; Sept 2021</div>
-        <div class="timeline-desc">Led 8-10 engineers building backend services for a major US telecom client. Spring Boot, Kafka, Elasticsearch. Reduced production defects by 35%.</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-role">Senior Technical Advisor</div>
-        <div class="timeline-company">Finastra, Bengaluru</div>
+        <div class="timeline-company">Finastra Software Solutions, Bengaluru &bull; Fintech</div>
         <div class="timeline-date">July 2017 &ndash; Sept 2018</div>
-        <div class="timeline-desc">Core banking platform modernisation. Legacy-to-microservices migration architecture.</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-role">Senior Software Engineer</div>
-        <div class="timeline-company">Robert Bosch Engineering, Bengaluru</div>
+        <div class="timeline-company">Robert Bosch Engineering, Bengaluru &bull; Automotive &amp; IoT</div>
         <div class="timeline-date">July 2011 &ndash; July 2017</div>
-        <div class="timeline-desc">Connected vehicle platform processing telemetry from 100K+ vehicles. IoT event-driven architecture, real-time diagnostics.</div>
       </div>
       <div class="timeline-item">
         <div class="timeline-role">Software Engineer</div>
-        <div class="timeline-company">Tata Consultancy Services, Bengaluru</div>
+        <div class="timeline-company">Tata Consultancy Services, Bengaluru &bull; IT Services</div>
         <div class="timeline-date">Oct 2008 &ndash; June 2011</div>
-        <div class="timeline-desc">Enterprise Java applications for banking and telecom clients. Where it all started.</div>
       </div>
     </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="architecture">
+  <div class="container fade-in">
+    <div class="section-label">Architecture &amp; System Design</div>
+    <div class="section-title">I don't just write code. I design the system it lives in.</div>
+    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:800px;line-height:1.9;margin-bottom:2.5rem">The part I love most is the blank whiteboard. Evaluating which language fits the problem &mdash; Java for enterprise reliability, Go for concurrency, Python for rapid ML prototyping. Choosing between Kafka and RabbitMQ based on throughput needs. Deciding whether a monolith serves better than microservices for the current scale. Every architectural choice is a bet on the future, and I take those bets seriously.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--teal);padding:2rem">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.5rem;font-weight:500">Platform Architecture</div>
+        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">40+ Service Platform Convergence &mdash; F-Secure</div>
+        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Evaluated 40+ services for retain, integrate, or overhaul. Designed the migration framework and architectural plans collaborating with product leads, engineering managers, and platform teams. Decisions included which services to sunset, which to modernise, and which to rebuild from scratch &mdash; each with different technology choices based on the service's role in the unified platform.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">AWS</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Terraform</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Spring Boot</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Kubernetes</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--blue);padding:2rem">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.5rem;font-weight:500">Security Architecture</div>
+        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Dual Authentication Protocol Design &mdash; F-Secure</div>
+        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Didn't just pick one auth approach &mdash; designed two competing protocols for different enterprise needs. Session-based PKCE with Redis caching for stateful clients, stateless HMAC-SHA256 with hybrid salt protection for lightweight proxies. Documented attack vectors (replay, timing, reverse engineering) and mitigation strategies for each. The client picks the architecture that fits their constraints.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">PKCE</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">HMAC-SHA256</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Redis</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">AWS Secrets Manager</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--green);padding:2rem">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-bottom:0.5rem;font-weight:500">Real-Time Event Architecture</div>
+        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Threat Monitoring Service &mdash; F-Secure</div>
+        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Architected from scratch: third-party threat intelligence APIs for data ingestion, Kafka for event streaming at 1,000+ events/sec, webhooks for real-time alerting. Chose Kafka over RabbitMQ for throughput at scale. Reduced detection-to-notification time by 40%. Optimised backend for 50% increase in event volume without performance degradation. Delivered 50+ client-specific customisations within a 45-day deadline. Led 15 engineers end-to-end.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Kafka</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Webhooks</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">REST APIs</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--coral);padding:2rem">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);margin-bottom:0.5rem;font-weight:500">Subscription &amp; Content Architecture</div>
+        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Breach Reporting Platform &mdash; F-Secure</div>
+        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Built a subscription service delivering real-time breach reports to 100,000+ users at 99.95% uptime. Integrated with a headless CMS for content management. Optimised database schema, cutting data retrieval times by 25% and supporting 30% user growth without additional resources. Implemented failure recovery strategies that reduced operational disruptions by 50%. Delivered 5 days ahead of a 45-day deadline.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Headless CMS</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Spring Boot</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">PostgreSQL</span>
+        </div>
+      </div>
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--purple);padding:2rem">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);margin-bottom:0.5rem;font-weight:500">AI System Design</div>
+        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Two-Tier LLM Optimisation Architecture &mdash; M.Sc. Thesis</div>
+        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Applied the same architectural thinking to AI. Designed a two-tier model strategy: Claude Haiku for cheap, fast exploration (52,844 evaluations) and Claude Sonnet for expensive validation of top candidates. Five-stage progressive filtering pipeline that eliminated 95%+ of weak candidates early. The architecture decision itself &mdash; using model tiers strategically &mdash; is what made $51 work instead of $2,000+.</p>
+        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Claude Haiku</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Claude Sonnet</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">ROUGE-2</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Python</span>
+        </div>
+      </div>
+
+    </div>
+
+    <p style="font-size:0.95rem;color:var(--text2);font-weight:300;max-width:800px;line-height:1.8;margin-top:2rem">This is where I'm headed &mdash; bringing 17 years of system design instincts to AI/ML architecture. Choosing the right model for the task. Designing evaluation pipelines that don't burn budget. Building RAG systems where the retrieval architecture matters as much as the model. The patterns transfer. The thinking scales.</p>
   </div>
 </section>
 
@@ -293,18 +439,24 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Education</div>
     <div class="section-title">Went back at 37. Came out with distinction.</div>
-    <div class="edu-grid">
+    <div class="edu-grid" style="grid-template-columns:1fr 1fr 1fr">
       <div class="edu-card">
         <div class="degree">M.Sc. Artificial Intelligence / Machine Learning</div>
         <div class="school">Liverpool John Moores University (LJMU), UK &bull; via UpGrad</div>
         <div class="detail">With Distinction (72%) &bull; January 2026<br>Specialisation: Generative AI &amp; Agentic AI</div>
-        <div class="badge">Thesis under Springer review</div>
+        <div class="badge" style="background:var(--coral-dim);color:var(--coral)">Thesis under Springer review</div>
       </div>
       <div class="edu-card">
         <div class="degree">Executive PG Diploma, ML &amp; AI</div>
         <div class="school">IIIT Bangalore &bull; via UpGrad</div>
         <div class="detail">CGPA 3.7/4.0 &bull; December 2024<br>Specialisation: Generative AI &amp; Agentic AI</div>
-        <div class="badge">Academic projects: RAG, CNNs, NLP</div>
+        <div class="badge" style="background:var(--purple-dim);color:var(--purple)">Academic projects: RAG, CNNs, NLP</div>
+      </div>
+      <div class="edu-card">
+        <div class="degree">B.E. Computer Science &amp; Engineering</div>
+        <div class="school">Sri Sidhartha Institute of Technology, Tumkur</div>
+        <div class="detail">June 2008<br>Where the engineering foundation was laid.</div>
+        <div class="badge" style="background:var(--teal-dim);color:var(--teal)">17+ years building on this</div>
       </div>
     </div>
   </div>
@@ -348,9 +500,85 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Certifications</div>
     <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem">
-      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Certified ScrumMaster (CSM) &bull; Scrum Alliance</div>
-      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">AWS Certified AI Practitioner</div>
-      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Microsoft Azure Fundamentals</div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Certified ScrumMaster (CSM) &bull; Scrum Alliance &bull; <span style="color:var(--accent)">Active</span></div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">AWS Certified AI Practitioner &bull; <span style="color:var(--accent)">Active</span></div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">Microsoft Azure Fundamentals &bull; <span style="color:var(--accent)">Active</span></div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);padding:0.8rem 1.2rem;font-size:0.85rem;color:var(--text2);font-weight:300">CKAD: Certified Kubernetes Application Developer &bull; Linux Foundation</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="stack">
+  <div class="container fade-in">
+    <div class="section-label">Core stack</div>
+    <div class="section-title">What I build with.</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2rem">
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.8rem;font-weight:500">Languages &amp; Frameworks</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">Java &bull; Spring Boot &bull; Go &bull; Scala &bull; Python &bull; Play Framework</div>
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.8rem;font-weight:500">Data &amp; Messaging</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">Kafka &bull; RabbitMQ &bull; MySQL &bull; PostgreSQL &bull; MongoDB &bull; Elasticsearch &bull; Redis</div>
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-bottom:0.8rem;font-weight:500">Cloud &amp; Infrastructure</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">AWS &bull; GCP (Basic) &bull; Docker &bull; Kubernetes &bull; Terraform &bull; Jenkins &bull; Spinnaker</div>
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);margin-bottom:0.8rem;font-weight:500">AI / ML</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">TensorFlow &bull; PyTorch &bull; LangChain &bull; Hugging Face &bull; OpenAI API &bull; RAG &bull; Vector DBs (FAISS, ChromaDB)</div>
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);margin-bottom:0.8rem;font-weight:500">AI Architectures</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">Transformers &bull; CNNs &bull; RNNs &bull; LSTMs &bull; Attention Mechanisms &bull; Generative AI &bull; NLP &bull; Computer Vision</div>
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.8rem;font-weight:500">AI Tooling (Daily Use)</div>
+        <div style="font-size:0.92rem;color:var(--text2);line-height:2;font-weight:300">Claude Code &bull; Cursor &bull; Claude Desktop (MCP) &bull; GitHub Copilot &bull; Quality-gating workflows</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="domains">
+  <div class="container fade-in">
+    <div class="section-label">Domains</div>
+    <div class="section-title">Industries I've shipped production systems in.</div>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem">
+      <div style="background:var(--teal-dim);border:1px solid var(--teal);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--teal);font-weight:500">Cybersecurity</div>
+      <div style="background:var(--blue-dim);border:1px solid var(--blue);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--blue);font-weight:500">Mobile Security</div>
+      <div style="background:var(--green-dim);border:1px solid var(--green);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--green);font-weight:500">Fintech &amp; Banking</div>
+      <div style="background:var(--coral-dim);border:1px solid var(--coral);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--coral);font-weight:500">Automotive &amp; IoT</div>
+      <div style="background:var(--purple-dim);border:1px solid var(--purple);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--purple);font-weight:500">Telecom</div>
+      <div style="background:var(--accent-dim);border:1px solid var(--accent);padding:0.6rem 1.5rem;font-size:0.85rem;color:var(--accent);font-weight:500">Enterprise Software</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<section id="writing">
+  <div class="container fade-in">
+    <div class="section-label">Writing &amp; Open Source</div>
+    <div class="section-title">I learn by building. I share by writing.</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;margin-top:1rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-left:3px solid var(--coral);padding:2rem;transition:border-color .3s">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);margin-bottom:0.6rem;font-weight:500">Medium Blog</div>
+        <p style="font-size:0.95rem;color:var(--text);font-weight:500;margin-bottom:0.5rem">Technical articles on backend engineering, AI integration, and lessons from 17 years of shipping code.</p>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Writing about what I learn &mdash; from optimising LLMs on a budget to designing authentication protocols that resist timing attacks. The blog is the thinking out loud.</p>
+        <a href="https://medium.com/@vinodhgowda" target="_blank" rel="noopener" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--coral);font-weight:500">Read on Medium &rarr;</a>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-left:3px solid var(--teal);padding:2rem;transition:border-color .3s">
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.6rem;font-weight:500">GitHub</div>
+        <p style="font-size:0.95rem;color:var(--text);font-weight:500;margin-bottom:0.5rem">Open-source projects, AI experiments, and the code behind the blog posts.</p>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">From sentiment-based recommendation systems to LLM tooling experiments. The repo is the proof of work.</p>
+        <a href="https://github.com/techexorcist" target="_blank" rel="noopener" style="font-size:0.8rem;letter-spacing:0.06em;text-transform:uppercase;color:var(--teal);font-weight:500">View on GitHub &rarr;</a>
+      </div>
     </div>
   </div>
 </section>
@@ -361,11 +589,11 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Connect</div>
     <div class="section-title">Let's build something together.</div>
-    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:650px;line-height:1.8;margin-bottom:1rem">I'm exploring Principal/Staff Engineer roles at the intersection of backend engineering and AI. Open to Bengaluru, remote, or international opportunities.</p>
+    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:700px;line-height:1.8;margin-bottom:1rem">I've spent 17 years proving I can build. I went back to school at 37 because I believed the next decade of engineering would look nothing like the last. Now I'm looking for the kind of role where engineering depth meets strategic impact &mdash; where I can architect systems today, shape engineering culture for the long term, and think well beyond the next sprint. The right role will find its own title. Let's talk.</p>
     <div class="connect-grid">
-      <a href="/cdn-cgi/l/email-protection#ff899691909b97d1919e989e8d9e95bf98929e9693d19c9092" class="connect-card">
+      <a href="mailto:vinodh.nagaraj@gmail.com" class="connect-card">
         <div class="icon">Email</div>
-        <div class="label"><span class="__cf_email__" data-cfemail="67110e0908030f490906000615060d27000a060e0b4904080a">[email&#160;protected]</span></div>
+        <div class="label">vinodh.nagaraj@gmail.com</div>
       </a>
       <a href="https://www.linkedin.com/in/vinodh-nagarajaiah/" target="_blank" rel="noopener" class="connect-card">
         <div class="icon">LinkedIn</div>
@@ -389,7 +617,7 @@ footer a{color:var(--accent)}
   </div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 // Theme toggle — light is default
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;

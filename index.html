@@ -15,23 +15,23 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0a0a0b;--bg2:#111113;--bg3:#1a1a1d;
-  --text:#e8e6e3;--text2:#9a9590;--text3:#5a5550;
-  --accent:#c9a96e;--accent2:#e8cc8c;--accent-dim:rgba(201,169,110,0.12);
-  --card-border:rgba(201,169,110,0.06);--card-border-hover:rgba(201,169,110,0.2);
-  --nav-bg:rgba(10,10,11,0.92);--nav-border:rgba(201,169,110,0.08);
-  --glow:rgba(201,169,110,0.04);
-  --font:"DM Sans",system-ui,sans-serif;
-  --serif:"DM Serif Display",Georgia,serif;
-  --max:1400px;
-}
-[data-theme="light"]{
   --bg:#faf9f7;--bg2:#f0eeeb;--bg3:#e8e5e1;
   --text:#1a1a1b;--text2:#5a5650;--text3:#9a9590;
   --accent:#8b6914;--accent2:#6b4f0e;--accent-dim:rgba(139,105,20,0.08);
   --card-border:rgba(0,0,0,0.08);--card-border-hover:rgba(139,105,20,0.25);
   --nav-bg:rgba(250,249,247,0.92);--nav-border:rgba(0,0,0,0.06);
   --glow:rgba(139,105,20,0.03);
+  --font:"DM Sans",system-ui,sans-serif;
+  --serif:"DM Serif Display",Georgia,serif;
+  --max:100%;
+}
+[data-theme="dark"]{
+  --bg:#0a0a0b;--bg2:#111113;--bg3:#1a1a1d;
+  --text:#e8e6e3;--text2:#9a9590;--text3:#5a5550;
+  --accent:#c9a96e;--accent2:#e8cc8c;--accent-dim:rgba(201,169,110,0.12);
+  --card-border:rgba(201,169,110,0.06);--card-border-hover:rgba(201,169,110,0.2);
+  --nav-bg:rgba(10,10,11,0.92);--nav-border:rgba(201,169,110,0.08);
+  --glow:rgba(201,169,110,0.04);
 }
 html{scroll-behavior:smooth;background:var(--bg)}
 body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease}
@@ -39,7 +39,7 @@ a{color:var(--accent);text-decoration:none;transition:color .2s}
 a:hover{color:var(--accent2)}
 ::selection{background:var(--accent);color:var(--bg)}
 
-.container{max-width:var(--max);margin:0 auto;padding:0 4rem}
+.container{max-width:var(--max);margin:0 auto;padding:0 6vw}
 
 /* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 0;transition:all .3s}
@@ -133,7 +133,7 @@ footer a{color:var(--accent)}
   .research-stats{grid-template-columns:repeat(2,1fr)}
   .connect-grid{grid-template-columns:repeat(2,1fr)}
   .hero-meta{gap:2rem}
-  .container{padding:0 1.25rem}
+  .container{padding:0 1.5rem}
 }
 
 /* ANIMATIONS */
@@ -147,8 +147,8 @@ footer a{color:var(--accent)}
 .theme-toggle:hover svg{stroke:var(--accent)}
 .sun-icon{display:none}
 .moon-icon{display:block}
-[data-theme="light"] .sun-icon{display:block}
-[data-theme="light"] .moon-icon{display:none}
+[data-theme="dark"] .sun-icon{display:block}
+[data-theme="dark"] .moon-icon{display:none}
 
 /* THEME TRANSITIONS */
 *{transition:background-color .4s ease,border-color .4s ease,color .2s ease}
@@ -390,21 +390,21 @@ footer a{color:var(--accent)}
 </footer>
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-// Theme toggle
+// Theme toggle — light is default
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 const saved = localStorage.getItem('theme');
-if (saved === 'light') html.setAttribute('data-theme', 'light');
-else if (!saved && window.matchMedia('(prefers-color-scheme: light)').matches) html.setAttribute('data-theme', 'light');
+if (saved === 'dark') html.setAttribute('data-theme', 'dark');
+else if (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches) html.setAttribute('data-theme', 'dark');
 
 toggle.addEventListener('click', () => {
-  const isLight = html.getAttribute('data-theme') === 'light';
-  if (isLight) {
+  const isDark = html.getAttribute('data-theme') === 'dark';
+  if (isDark) {
     html.removeAttribute('data-theme');
-    localStorage.setItem('theme', 'dark');
-  } else {
-    html.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light');
+  } else {
+    html.setAttribute('data-theme', 'dark');
+    localStorage.setItem('theme', 'dark');
   }
 });
 

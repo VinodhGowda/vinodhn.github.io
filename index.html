@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vinodh Nagarajaiah — Polyglot Engineer | AI/ML | Cloud Architect</title>
+<title>Vinodh Nagarajaiah — 17 Years Making Systems Unbreakable. Now Making Them Intelligent.</title>
 <meta name="description" content="Polyglot Software Engineer with 17+ years building enterprise-grade systems in Java, Go, Scala & Python. M.Sc. AI/ML (With Distinction). Bengaluru, India.">
 <meta property="og:title" content="Vinodh Nagarajaiah — Polyglot Engineer | AI/ML">
-<meta property="og:description" content="17+ years enterprise engineering across 5 industries + M.Sc. AI/ML. Building at the intersection of backend systems and artificial intelligence.">
+<meta property="og:description" content="17 years making systems unbreakable. Now making them intelligent. Polyglot engineer + M.Sc. AI/ML across 5 industries.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vinodhn.dev">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='12' fill='%230a0a0b'/%3E%3Ccircle cx='50' cy='50' r='42' fill='none' stroke='%235a5550' stroke-width='3'/%3E%3Cpath d='M18 24L44 68' stroke='%23c9a96e' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='46' cy='44' r='8' fill='%2385b7eb'/%3E%3Cpath d='M52 24L52 68L76 24L76 68' stroke='%235dcaa5' stroke-width='6' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -43,8 +44,21 @@
   --green:#97c459;--green-dim:rgba(151,196,89,0.12);
   --purple:#afa9ec;--purple-dim:rgba(175,169,236,0.12);
 }
+[data-theme="warm"]{
+  --bg:#2a2520;--bg2:#332d27;--bg3:#3d362f;
+  --text:#e0d8cc;--text2:#b0a594;--text3:#7a7060;
+  --accent:#d4a84b;--accent2:#e8c06a;--accent-dim:rgba(212,168,75,0.15);
+  --card-border:rgba(212,168,75,0.08);--card-border-hover:rgba(212,168,75,0.25);
+  --nav-bg:rgba(42,37,32,0.95);--nav-border:rgba(212,168,75,0.1);
+  --glow:rgba(212,168,75,0.06);
+  --teal:#6fc9a8;--teal-dim:rgba(111,201,168,0.15);
+  --coral:#e8936e;--coral-dim:rgba(232,147,110,0.15);
+  --blue:#7db0e0;--blue-dim:rgba(125,176,224,0.15);
+  --green:#8cb852;--green-dim:rgba(140,184,82,0.15);
+  --purple:#a9a2e0;--purple-dim:rgba(169,162,224,0.15);
+}
 html{scroll-behavior:smooth;background:var(--bg)}
-body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease}
+body{font-family:var(--font);color:var(--text);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;transition:background .4s ease,color .4s ease;background-image:url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='1.5' fill='%239a9590' opacity='0.08'/%3E%3Cpath d='M0 40L80 40M40 0L40 80' stroke='%239a9590' stroke-width='0.2' opacity='0.04'/%3E%3C/svg%3E");background-size:80px 80px}
 a{color:var(--accent);text-decoration:none;transition:color .2s}
 a:hover{color:var(--accent2)}
 ::selection{background:var(--accent);color:var(--bg)}
@@ -52,8 +66,8 @@ a:hover{color:var(--accent2)}
 .container{max-width:var(--max);margin:0 auto;padding:0 6vw}
 
 /* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 0;transition:all .3s}
-nav.scrolled{background:var(--nav-bg);backdrop-filter:blur(20px);border-bottom:1px solid var(--nav-border)}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.25rem 0;transition:all .3s;background:var(--bg);border-bottom:1px solid transparent}
+nav.scrolled{background:var(--bg2);box-shadow:0 2px 16px rgba(0,0,0,0.15);border-bottom:1px solid var(--accent-dim)}
 nav .container{display:flex;justify-content:space-between;align-items:center}
 .nav-name{font-family:var(--serif);font-size:1.25rem;color:var(--text);letter-spacing:0.02em}
 .nav-links{display:flex;gap:2rem;align-items:center}
@@ -65,20 +79,21 @@ nav .container{display:flex;justify-content:space-between;align-items:center}
 /* HERO */
 .hero{min-height:100vh;display:flex;align-items:center;padding:8rem 0 6rem;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;top:-40%;right:-20%;width:600px;height:600px;background:radial-gradient(circle,var(--glow) 0%,transparent 70%);pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:4rem;align-items:center;width:100%}
 .hero-label{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:1.5rem;font-weight:500}
-.hero h1{font-family:var(--serif);font-size:clamp(2.5rem,6vw,4.5rem);color:var(--text);line-height:1.15;margin-bottom:1.5rem;max-width:900px}
+.hero h1{font-family:var(--serif);font-size:clamp(2.5rem,5vw,4rem);color:var(--text);line-height:1.15;margin-bottom:1.5rem}
 .hero h1 span{color:var(--accent)}
-.hero-sub{font-size:1.15rem;color:var(--text2);max-width:700px;line-height:1.8;margin-bottom:2.5rem;font-weight:300}
+.hero-sub{font-size:1.1rem;color:var(--text2);line-height:1.8;margin-bottom:2.5rem;font-weight:300}
 .hero-actions{display:flex;gap:1rem;flex-wrap:wrap}
 .btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.85rem 2rem;font-size:0.85rem;letter-spacing:0.06em;text-transform:uppercase;font-family:var(--font);font-weight:500;border:none;cursor:pointer;transition:all .25s}
 .btn-primary{background:var(--accent);color:var(--bg)}
 .btn-primary:hover{background:var(--accent2);color:var(--bg)}
 .btn-outline{background:transparent;border:1px solid var(--text3);color:var(--text2)}
 .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
-.hero-meta{margin-top:4rem;display:flex;gap:4rem;flex-wrap:wrap}
-.hero-meta-item{display:flex;flex-direction:column}
-.hero-meta-val{font-family:var(--serif);font-size:2.2rem;color:var(--text)}
-.hero-meta-label{font-size:0.75rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem}
+.hero-metrics{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.hero-metric{background:var(--bg2);border:1px solid var(--card-border);padding:1.25rem 1.5rem}
+.hero-metric-val{font-family:var(--serif);font-size:2rem;color:var(--text)}
+.hero-metric-label{font-size:0.7rem;color:var(--text3);text-transform:uppercase;letter-spacing:0.1em;margin-top:0.2rem}
 
 /* SECTIONS */
 section{padding:6rem 0}
@@ -88,7 +103,7 @@ section{padding:6rem 0}
 
 /* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
-.about-text{font-size:1rem;color:var(--text2);line-height:1.9;font-weight:300}
+.about-text{font-size:1.1rem;color:var(--text2);line-height:1.9;font-weight:300}
 .about-text strong{color:var(--text);font-weight:500}
 .about-highlights{display:flex;flex-direction:column;gap:1rem}
 .highlight-card{background:var(--bg2);border:1px solid var(--card-border);padding:1.25rem 1.5rem;transition:border-color .3s,background .4s}
@@ -137,33 +152,110 @@ footer p{font-size:0.8rem;color:var(--text3);font-weight:300}
 footer a{color:var(--accent)}
 
 /* RESPONSIVE */
+/* TABLET: 701-1024px */
+@media(max-width:1024px){
+  .container{padding:0 3vw}
+  .hero-grid{grid-template-columns:1fr 1fr !important;gap:2.5rem}
+  #about [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  #architecture [style*="repeat(3"]{grid-template-columns:1fr 1fr !important}
+  #stack [style*="grid-template-columns"]{grid-template-columns:repeat(2,1fr) !important}
+  #education .edu-grid{grid-template-columns:1fr 1fr !important}
+  #experience [style*="display:flex;align-items:stretch"]{flex-wrap:wrap}
+  #experience [style*="display:flex;align-items:stretch"] > div{flex-basis:30% !important;min-width:140px;flex-grow:1}
+  #experience [style*="repeat(4"]{grid-template-columns:repeat(2,1fr) !important}
+  #value [style*="grid-template-columns"]{grid-template-columns:repeat(2,1fr) !important}
+}
+
+/* MOBILE: 700px and below */
+  #connect [style*="grid-template-columns:1fr 1fr"]{grid-template-columns:1fr !important}
 @media(max-width:700px){
+  .container{padding:0 1.25rem}
+
+  /* Nav: hide text links, keep CTA + toggle */
   .nav-links a:not(.nav-cta):not(.theme-toggle){display:none}
+  .nav-links{gap:1rem}
+  .nav-cta{padding:0.4rem 0.8rem;font-size:0.7rem}
+
+  /* Nav logo: hide text on small screens, keep icon */
+  .nav-name span{display:none !important}
+
+  /* Hero: stack vertically */
+  .hero{padding:6rem 0 3rem;min-height:auto}
+  .hero-grid{grid-template-columns:1fr !important;gap:2rem}
+  .hero h1{font-size:1.8rem !important}
+  .hero-sub{font-size:0.95rem}
+  .hero-metrics{grid-template-columns:repeat(2,1fr) !important;gap:0.75rem}
+  .hero-metric{padding:0.8rem}
+  .hero-metric-val{font-size:1.5rem}
+  .hero-metric[style*="span 2"]{grid-column:span 2}
+
+  /* About: single column */
   .about-grid,.edu-grid{grid-template-columns:1fr}
-  .research-stats{grid-template-columns:repeat(2,1fr)}
-  .connect-grid{grid-template-columns:repeat(2,1fr)}
-  .hero-meta{gap:2rem}
-  .container{padding:0 1.5rem}
-  #stack [style*="grid-template-columns"]{grid-template-columns:1fr !important}
-  #education .edu-grid{grid-template-columns:1fr !important}
-  #writing [style*="grid-template-columns"]{grid-template-columns:1fr !important}
-  #architecture [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  #about [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+
+  /* Section titles smaller */
+  .section-title{font-size:1.4rem !important}
+  section{padding:3.5rem 0}
+
+  /* Value cards: single column */
   #value [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+
+  /* Experience: career bar wraps, metrics 2-col */
+  #experience [style*="display:flex;align-items:stretch"]{flex-wrap:wrap}
+  #experience [style*="display:flex;align-items:stretch"] > div{flex-basis:100% !important;min-width:0}
+  #experience [style*="repeat(4"]{grid-template-columns:1fr !important}
+
+  /* Architecture: single column */
+  #architecture [style*="repeat(3"]{grid-template-columns:1fr !important}
+  #architecture [style*="1fr 1fr"]{grid-template-columns:1fr !important}
+
+  /* Education: single column */
+  #education .edu-grid{grid-template-columns:1fr !important}
+
+  /* Research stats: 2 columns */
+  .research-stats{grid-template-columns:repeat(2,1fr)}
+
+  /* Stack: single column */
+  #stack [style*="grid-template-columns"]{grid-template-columns:repeat(2,1fr) !important}
+
+  /* Writing: single column */
+  #writing [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+
+  /* Connect: 2 columns */
+  .connect-grid{grid-template-columns:repeat(2,1fr)}
+
+  /* Domains pills: wrap nicely */
+  #domains [style*="display:flex"]{gap:0.5rem}
+  #domains [style*="display:flex"] > div{font-size:0.75rem;padding:0.5rem 1rem}
+}
+
+/* SMALL PHONE: 400px and below */
+@media(max-width:400px){
+  .container{padding:0 1rem}
+  .hero h1{font-size:1.5rem !important}
+  .hero-metrics{grid-template-columns:1fr !important}
+  .hero-metric[style*="span 2"]{grid-column:span 1}
+  .connect-grid{grid-template-columns:1fr !important}
+  #stack [style*="grid-template-columns"]{grid-template-columns:1fr !important}
+  .research-stats{grid-template-columns:1fr}
 }
 
 /* ANIMATIONS */
-.fade-in{opacity:0;transform:translateY(20px);transition:opacity 0.6s ease,transform 0.6s ease}
-.fade-in.visible{opacity:1;transform:translateY(0)}
+.fade-in{opacity:1;transform:translateY(0);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.animate{opacity:0;transform:translateY(20px)}
+.fade-in.animate.visible{opacity:1;transform:translateY(0)}
 
 /* THEME TOGGLE */
 .theme-toggle{background:transparent;border:1px solid var(--text3);width:36px;height:36px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s;padding:0;margin-left:0.5rem}
 .theme-toggle:hover{border-color:var(--accent)}
 .theme-toggle svg{width:16px;height:16px;fill:none;stroke:var(--text2);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transition:stroke .3s}
 .theme-toggle:hover svg{stroke:var(--accent)}
-.sun-icon{display:none}
-.moon-icon{display:block}
-[data-theme="dark"] .sun-icon{display:block}
-[data-theme="dark"] .moon-icon{display:none}
+.icon-sun{display:none}
+.icon-moon{display:block}
+[data-theme="warm"] .icon-sun{display:none}
+[data-theme="warm"] .icon-moon{display:block}
+[data-theme="dark"] .icon-sun{display:block}
+[data-theme="dark"] .icon-moon{display:none}
 
 /* THEME TRANSITIONS */
 *{transition:background-color .4s ease,border-color .4s ease,color .2s ease}
@@ -173,7 +265,16 @@ footer a{color:var(--accent)}
 
 <nav id="nav">
   <div class="container">
-    <div class="nav-name">VN</div>
+    <a href="#" class="nav-name" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+        <svg width="44" height="44" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="44" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+          <path d="M18 24L44 68" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+          <circle cx="46" cy="44" r="8" fill="none" stroke="var(--blue)" stroke-width="3"/>
+          <circle cx="46" cy="44" r="3.5" fill="var(--blue)"/>
+          <path d="M52 24L52 68L76 24L76 68" stroke="var(--teal)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        </svg>
+        <span style="font-size:1.25rem;color:var(--text)"><span style="font-family:var(--serif)">vinodhn</span><span style="font-family:var(--font);font-weight:300;color:var(--accent)">.dev</span></span>
+      </a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
@@ -181,39 +282,65 @@ footer a{color:var(--accent)}
       <a href="#research">Research</a>
       <a href="#connect">Connect</a>
       <button class="nav-cta" onclick="window.open('mailto:vinodh.nagaraj@gmail.com')">Get in touch</button>
-      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-        <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
       </button>
     </div>
   </div>
 </nav>
 
-<section class="hero">
+<section class="hero" style="position:relative;overflow:hidden">
+  <!-- Large circuit watermark -->
+  <div style="position:absolute;right:-8%;top:50%;transform:translateY(-50%);opacity:0.05;pointer-events:none">
+    <svg width="700" height="700" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="44" fill="none" stroke="var(--accent)" stroke-width="1"/>
+      <path d="M18 24L44 68" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="46" cy="44" r="6.5" fill="none" stroke="var(--blue)" stroke-width="1.5"/>
+      <circle cx="46" cy="44" r="2.5" fill="var(--blue)"/>
+      <path d="M52 24L52 68L76 24L76 68" stroke="var(--teal)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    </svg>
+  </div>
   <div class="container">
-    <div class="hero-label">Polyglot Engineer &bull; Cloud Architect &bull; AI/ML Researcher</div>
-    <h1>I build systems that <span>scale</span>, and study how to make them <span>intelligent</span>.</h1>
-    <p class="hero-sub">17+ years shipping production backends in Java, Go, Scala &amp; Python across five industries. M.Sc. in AI/ML (With Distinction) specialising in Generative AI &amp; Agentic AI. Currently shaping the future of cloud security at F-Secure.</p>
-    <div class="hero-actions">
-      <a href="#connect" class="btn btn-primary">Let's connect</a>
-      <a href="#research" class="btn btn-outline">View my research</a>
-    </div>
-    <div class="hero-meta">
-      <div class="hero-meta-item">
-        <div class="hero-meta-val">17+</div>
-        <div class="hero-meta-label">Years engineering</div>
+    <div class="hero-grid">
+      <div>
+        <div class="hero-label">Polyglot Engineer &bull; Cloud Architect &bull; AI/ML Researcher</div>
+        <h1>17 years making systems <span>unbreakable</span>. Now making them <span>intelligent</span>.</h1>
+        <p class="hero-sub">17+ years shipping production backends in Java, Go, Scala &amp; Python across cybersecurity, fintech, automotive, and telecom. M.Sc. in AI/ML (With Distinction) specialising in Generative AI &amp; Agentic AI. I design architectures from the whiteboard up, lead teams that deliver ahead of deadline, and bring cost-conscious AI thinking to every problem.</p>
+        <div class="hero-actions">
+          <a href="#connect" class="btn btn-primary">Let's connect</a>
+          <a href="#research" class="btn btn-outline">View my research</a>
+        </div>
       </div>
-      <div class="hero-meta-item">
-        <div class="hero-meta-val">99.9%</div>
-        <div class="hero-meta-label">SLA delivered</div>
-      </div>
-      <div class="hero-meta-item">
-        <div class="hero-meta-val">52,844</div>
-        <div class="hero-meta-label">LLM evaluations in thesis</div>
-      </div>
-      <div class="hero-meta-item">
-        <div class="hero-meta-val">15</div>
-        <div class="hero-meta-label">Engineers led</div>
+      <div class="hero-metrics">
+        <div class="hero-metric" style="border-top:2px solid var(--accent)">
+          <div class="hero-metric-val">17+</div>
+          <div class="hero-metric-label">Years engineering</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--teal)">
+          <div class="hero-metric-val">6</div>
+          <div class="hero-metric-label">Companies</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--blue)">
+          <div class="hero-metric-val">5</div>
+          <div class="hero-metric-label">Industries</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--green)">
+          <div class="hero-metric-val">100K+</div>
+          <div class="hero-metric-label">Users served</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--coral)">
+          <div class="hero-metric-val">99.9%</div>
+          <div class="hero-metric-label">SLA delivered</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--purple)">
+          <div class="hero-metric-val">52,844</div>
+          <div class="hero-metric-label">LLM evaluations</div>
+        </div>
+        <div class="hero-metric" style="border-top:2px solid var(--accent);grid-column:span 2">
+          <div class="hero-metric-val">15</div>
+          <div class="hero-metric-label">Engineers led across concurrent projects</div>
+        </div>
       </div>
     </div>
   </div>
@@ -225,43 +352,55 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">About</div>
     <div class="section-title">Backend engineer who went back to school for AI.</div>
-    <div class="about-grid">
-      <div class="about-text">
-        <p>I'm a <strong>polyglot engineer</strong> &mdash; Java is my first language, but I think in systems, not syntax. Production code in <strong>Java, Go, Scala, and Python</strong>. I've written backend services in Spring Boot, Play Framework, and raw Go. I pick the right tool for the problem, not the one I'm most comfortable with.</p>
-        <br>
-        <p>17 years building production systems across cybersecurity, fintech, automotive, and telecom &mdash; real-time monitoring on Kafka, authentication protocols analysed for replay and timing attacks, enterprise platforms at 99.9% SLA.</p>
-        <br>
-        <p>At 37, I went back to school. Completed an <strong>M.Sc. in AI/ML from Liverpool John Moores University</strong> (With Distinction, via UpGrad) and an <strong>Executive PG Diploma from IIIT Bangalore</strong> (3.7/4.0, via UpGrad), both specialising in Generative AI &amp; Agentic AI. My thesis showed you can optimise LLMs for <strong>$51 instead of $2,000+</strong>.</p>
-        <br>
-        <p>I write about what I learn. I build tools that solve real problems. I use Claude Code, Cursor, and GitHub Copilot daily &mdash; not as a crutch, but with quality-gating workflows that keep code honest.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;margin-bottom:2.5rem" class="about-text">
+        <div>
+          <p>I fell in love with programming in college and never stopped. What started as Java evolved into <strong>Go, Scala, and Python</strong> &mdash; not because the market demanded it, but because every new language changed how I think about problems. I don't identify with one stack. I identify with the craft of building things that work under pressure.</p>
+          <br>
+          <p>Over 17 years, I've moved across <strong>five industries</strong> &mdash; not because I was restless, but because I was curious. Each domain taught me a constraint I couldn't learn any other way: fintech taught me precision, automotive taught me real-time, telecom taught me scale, and cybersecurity taught me that nothing is ever truly secure.</p>
+          <br>
+          <p>What I love most is the blank whiteboard. The moment before a single line of code exists, when the architecture is still a question. Which language? Which message broker? Monolith or microservices? Those decisions shape everything that follows, and I take them seriously.</p>
+        </div>
+        <div>
+          <p>At 37, I made a bet. I went back to school for an <strong>M.Sc. in AI/ML</strong> because I believed the next decade of engineering would look nothing like the last. Two years later, I graduated <strong>With Distinction</strong>, specialising in Generative AI &amp; Agentic AI, with a thesis under review for Springer.</p>
+          <br>
+          <p>That bet is paying off. I now see AI not as a separate discipline but as an <strong>architecture problem</strong> &mdash; choosing the right model, designing cost-efficient evaluation pipelines, building systems where the retrieval layer matters as much as the model. The same instincts that helped me design backend systems for 17 years now help me design AI systems.</p>
+          <br>
+          <p>I write about what I learn. I build tools that scratch my own itch. I use AI coding assistants daily &mdash; not as a crutch, but with workflows that keep the code honest. I'm not just an engineer who learned AI, and I'm not just an AI student who can code. <strong>I'm the bridge</strong> &mdash; and that's where the most interesting problems live.</p>
+        </div>
       </div>
-      <div class="about-highlights">
-        <div class="highlight-card" style="border-left:3px solid var(--teal)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
+        <div class="highlight-card" style="border-left:3px solid var(--teal);border-radius:0">
           <h4 style="color:var(--teal)">Polyglot engineer</h4>
           <p>Java, Go, Scala, Python &mdash; production code across all four. Spring Boot, Play Framework, Kafka, Elasticsearch. I don't have a comfort zone; I have a toolkit.</p>
         </div>
-        <div class="highlight-card" style="border-left:3px solid var(--coral)">
+        <div class="highlight-card" style="border-left:3px solid var(--coral);border-radius:0">
           <h4 style="color:var(--coral)">AIOps at F-Secure</h4>
           <p>AI-CodeMedic: LLM-powered AIOps debugging engine &mdash; auto-scans logs, diagnoses bugs, generates PRs. HackWeek 2nd place, actively being evaluated for production. Java 21 + Spring Boot 3.x + OpenAI APIs.</p>
         </div>
-        <div class="highlight-card" style="border-left:3px solid var(--purple)">
+        <div class="highlight-card" style="border-left:3px solid var(--purple);border-radius:0">
           <h4 style="color:var(--purple)">Academic AI</h4>
           <p>RAG semantic search (LangChain, FAISS, ChromaDB), gesture recognition CNNs (94% accuracy), NLP recommendation systems, melanoma detection.</p>
         </div>
-        <div class="highlight-card" style="border-left:3px solid var(--blue)">
+        <div class="highlight-card" style="border-left:3px solid var(--blue);border-radius:0">
           <h4 style="color:var(--blue)">The AI journey</h4>
           <p>17 years of production engineering + 2 years of formal AI education. Building toward production AI systems &mdash; from thesis research to AIOps tools to daily AI-augmented development.</p>
         </div>
       </div>
     </div>
-  </div>
 </section>
 
 <section style="padding:4rem 0">
   <div class="container">
     <div style="max-width:800px;margin:0 auto;text-align:center">
+      <svg width="48" height="48" viewBox="0 0 100 100" fill="none" style="margin-bottom:1.5rem;opacity:0.3">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <path d="M18 24L44 68" stroke="var(--accent)" stroke-width="4.5" stroke-linecap="round"/>
+        <circle cx="46" cy="44" r="6.5" fill="none" stroke="var(--accent)" stroke-width="2"/>
+        <circle cx="46" cy="44" r="2.5" fill="var(--accent)"/>
+        <path d="M52 24L52 68L76 24L76 68" stroke="var(--accent)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
       <div style="font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.8rem);color:var(--text);line-height:1.5;font-style:italic">&ldquo;AI isn&rsquo;t a threat to me &mdash; it&rsquo;s a force to be leveraged responsibly and with intention.&rdquo;</div>
-      <div style="margin-top:1rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3)">My stance on AI</div>
+      <div style="margin-top:1rem;font-size:0.8rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--text3)">How I approach AI</div>
     </div>
   </div>
 </section>
@@ -320,39 +459,66 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Experience</div>
     <div class="section-title">Six companies. Five industries. One thread: building at scale.</div>
-    <div class="timeline">
-      <div class="timeline-item current">
-        <div class="timeline-role">Lead Cloud Specialist</div>
-        <div class="timeline-company">F-Secure India, Bengaluru (Remote) &bull; Cybersecurity</div>
-        <div class="timeline-date">June 2023 &ndash; Present</div>
-        <div class="timeline-desc">Architecting the migration and convergence of 40+ services into a unified platform, collaborating with product leads and engineering managers to safeguard the 2026 convergence deadline. Designed two enterprise authentication protocols &mdash; session-based PKCE with Redis caching and stateless HMAC-SHA256 with hybrid salt protection &mdash; with security analysis covering replay attacks, timing attacks, and reverse engineering vectors. Delivered real-time threat monitoring processing 1,000+ events/sec on Kafka with 99.9% availability and zero SLA breaches, optimising backend services for a 50% increase in event volume handling while saving 10% in scaling costs. Built a subscription-based breach reporting service serving 100,000+ users at 99.95% uptime, reducing data retrieval times by 25%. Co-developed AI-CodeMedic during AI HackWeek (2nd place) &mdash; an LLM-powered AIOps engine achieving 60% reduction in debugging effort, currently being evaluated for production adoption. Consolidated cloud infrastructure, lowering costs by 20%. Reduced detection-to-notification time by 40% for real-time alerts. Implemented failure recovery strategies reducing operational disruptions by 50%. Led teams of 5&ndash;15 engineers across multiple concurrent projects, consistently delivering ahead of schedule.</div>
+
+    <!-- Career progression bar -->
+    <div style="display:flex;align-items:stretch;gap:0;margin-bottom:2.5rem;width:100%">
+      <div style="flex:2;background:var(--accent-dim);border-left:3px solid var(--accent);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Lead Cloud Specialist</div>
+        <div style="font-size:0.75rem;color:var(--accent)">F-Secure &bull; Cybersecurity</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2023 &ndash; now</div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-role">Senior Staff Engineer</div>
-        <div class="timeline-company">Lookout India Technologies, Bengaluru (Remote) &bull; Mobile Security</div>
-        <div class="timeline-date">Sept 2021 &ndash; June 2023</div>
+      <div style="flex:1.5;background:var(--bg2);border-left:2px solid var(--teal);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Sr. Staff Engineer</div>
+        <div style="font-size:0.75rem;color:var(--teal)">Lookout &bull; Mobile Security</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2021 &ndash; 2023</div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-role">Technical Lead</div>
-        <div class="timeline-company">Globant India, Bengaluru (Remote) &bull; Technology Consulting</div>
-        <div class="timeline-date">Sept 2018 &ndash; Sept 2021</div>
+      <div style="flex:2;background:var(--bg2);border-left:2px solid var(--blue);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Technical Lead</div>
+        <div style="font-size:0.75rem;color:var(--blue)">Globant &bull; Tech Consulting</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2018 &ndash; 2021</div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-role">Senior Technical Advisor</div>
-        <div class="timeline-company">Finastra Software Solutions, Bengaluru &bull; Fintech</div>
-        <div class="timeline-date">July 2017 &ndash; Sept 2018</div>
+      <div style="flex:1;background:var(--bg2);border-left:2px solid var(--green);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Sr. Advisor</div>
+        <div style="font-size:0.75rem;color:var(--green)">Finastra &bull; Fintech</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2017 &ndash; 18</div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-role">Senior Software Engineer</div>
-        <div class="timeline-company">Robert Bosch Engineering, Bengaluru &bull; Automotive &amp; IoT</div>
-        <div class="timeline-date">July 2011 &ndash; July 2017</div>
+      <div style="flex:3.5;background:var(--bg2);border-left:2px solid var(--coral);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Sr. Software Engineer</div>
+        <div style="font-size:0.75rem;color:var(--coral)">Robert Bosch &bull; Automotive &amp; IoT</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2011 &ndash; 2017</div>
       </div>
-      <div class="timeline-item">
-        <div class="timeline-role">Software Engineer</div>
-        <div class="timeline-company">Tata Consultancy Services, Bengaluru &bull; IT Services</div>
-        <div class="timeline-date">Oct 2008 &ndash; June 2011</div>
+      <div style="flex:1.5;background:var(--bg2);border-left:2px solid var(--purple);padding:0.8rem 1rem">
+        <div style="font-size:0.85rem;font-weight:500;color:var(--text)">Software Engineer</div>
+        <div style="font-size:0.75rem;color:var(--purple)">TCS &bull; IT Services</div>
+        <div style="font-size:0.65rem;color:var(--text3);margin-top:0.15rem">2008 &ndash; 2011</div>
       </div>
     </div>
+
+    <!-- Current role: F-Secure detail grid -->
+    <div style="font-size:0.7rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-weight:500">Current role highlights &mdash; F-Secure</div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:2px solid var(--teal);padding:1.25rem">
+        <div style="font-family:var(--serif);font-size:1.4rem;color:var(--teal)">40+</div>
+        <div style="font-size:0.8rem;font-weight:500;color:var(--text);margin:0.3rem 0">Services converged</div>
+        <p style="font-size:0.78rem;color:var(--text2);font-weight:300;line-height:1.5">Architecting migration into unified platform. Dual auth protocols (PKCE + HMAC-SHA256). Cloud costs down 20%.</p>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:2px solid var(--green);padding:1.25rem">
+        <div style="font-family:var(--serif);font-size:1.4rem;color:var(--green)">1,000+</div>
+        <div style="font-size:0.8rem;font-weight:500;color:var(--text);margin:0.3rem 0">Events/sec processed</div>
+        <p style="font-size:0.78rem;color:var(--text2);font-weight:300;line-height:1.5">Real-time threat monitoring on Kafka. 99.9% availability. 50% more volume, 10% less cost. 40% faster alerts.</p>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:2px solid var(--coral);padding:1.25rem">
+        <div style="font-family:var(--serif);font-size:1.4rem;color:var(--coral)">60%</div>
+        <div style="font-size:0.8rem;font-weight:500;color:var(--text);margin:0.3rem 0">Debugging effort reduced</div>
+        <p style="font-size:0.78rem;color:var(--text2);font-weight:300;line-height:1.5">AI-CodeMedic: LLM-powered AIOps engine. HackWeek 2nd place. Being evaluated for production adoption.</p>
+      </div>
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:2px solid var(--blue);padding:1.25rem">
+        <div style="font-family:var(--serif);font-size:1.4rem;color:var(--blue)">100K+</div>
+        <div style="font-size:0.8rem;font-weight:500;color:var(--text);margin:0.3rem 0">Users at 99.95% uptime</div>
+        <p style="font-size:0.78rem;color:var(--text2);font-weight:300;line-height:1.5">Breach reporting platform. 25% faster retrieval. 50% fewer disruptions. 5&ndash;15 engineers led. Delivered ahead of schedule.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -362,68 +528,72 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Architecture &amp; System Design</div>
     <div class="section-title">I don't just write code. I design the system it lives in.</div>
-    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:800px;line-height:1.9;margin-bottom:2.5rem">The part I love most is the blank whiteboard. Evaluating which language fits the problem &mdash; Java for enterprise reliability, Go for concurrency, Python for rapid ML prototyping. Choosing between Kafka and RabbitMQ based on throughput needs. Deciding whether a monolith serves better than microservices for the current scale. Every architectural choice is a bet on the future, and I take those bets seriously.</p>
+    <p style="font-size:1rem;color:var(--text2);font-weight:300;line-height:1.9;margin-bottom:2.5rem">The part I love most is the blank whiteboard. Evaluating which language fits the problem &mdash; Java for enterprise reliability, Go for concurrency, Python for rapid ML prototyping. Choosing between Kafka and RabbitMQ based on throughput needs. Deciding whether a monolith serves better than microservices for the current scale. Every architectural choice is a bet on the future, and I take those bets seriously.</p>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem">
 
-      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--teal);padding:2rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--teal);padding:1.75rem">
         <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal);margin-bottom:0.5rem;font-weight:500">Platform Architecture</div>
-        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">40+ Service Platform Convergence &mdash; F-Secure</div>
-        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Evaluated 40+ services for retain, integrate, or overhaul. Designed the migration framework and architectural plans collaborating with product leads, engineering managers, and platform teams. Decisions included which services to sunset, which to modernise, and which to rebuild from scratch &mdash; each with different technology choices based on the service's role in the unified platform.</p>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">AWS</span>
-          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Terraform</span>
-          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
-          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Spring Boot</span>
-          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Kubernetes</span>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.6rem">40+ Service Convergence</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:0.8rem">Evaluated 40+ services for retain, integrate, or overhaul. Designed migration frameworks collaborating with product leads and engineering managers. Each service got a different technology decision based on its role in the unified platform.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">AWS</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Terraform</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Java</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Spring Boot</span>
+          <span style="background:var(--teal-dim);color:var(--teal);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Kubernetes</span>
         </div>
       </div>
 
-      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--blue);padding:2rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--blue);padding:1.75rem">
         <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--blue);margin-bottom:0.5rem;font-weight:500">Security Architecture</div>
-        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Dual Authentication Protocol Design &mdash; F-Secure</div>
-        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Didn't just pick one auth approach &mdash; designed two competing protocols for different enterprise needs. Session-based PKCE with Redis caching for stateful clients, stateless HMAC-SHA256 with hybrid salt protection for lightweight proxies. Documented attack vectors (replay, timing, reverse engineering) and mitigation strategies for each. The client picks the architecture that fits their constraints.</p>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">PKCE</span>
-          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">HMAC-SHA256</span>
-          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Redis</span>
-          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">AWS Secrets Manager</span>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.6rem">Dual Authentication Protocols</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:0.8rem">Designed two competing auth protocols: session-based PKCE with Redis caching and stateless HMAC-SHA256 with hybrid salt protection. Documented attack vectors (replay, timing, reverse engineering) with mitigation strategies.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">PKCE</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">HMAC-SHA256</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Redis</span>
+          <span style="background:var(--blue-dim);color:var(--blue);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">AWS Secrets Manager</span>
         </div>
       </div>
 
-      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--green);padding:2rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--green);padding:1.75rem">
         <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);margin-bottom:0.5rem;font-weight:500">Real-Time Event Architecture</div>
-        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Threat Monitoring Service &mdash; F-Secure</div>
-        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Architected from scratch: third-party threat intelligence APIs for data ingestion, Kafka for event streaming at 1,000+ events/sec, webhooks for real-time alerting. Chose Kafka over RabbitMQ for throughput at scale. Reduced detection-to-notification time by 40%. Optimised backend for 50% increase in event volume without performance degradation. Delivered 50+ client-specific customisations within a 45-day deadline. Led 15 engineers end-to-end.</p>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Kafka</span>
-          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Webhooks</span>
-          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">REST APIs</span>
-          <span style="background:var(--green-dim);color:var(--green);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.6rem">Threat Monitoring at 1,000+ Events/Sec</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:0.8rem">Architected from scratch: threat intelligence APIs, Kafka for streaming, webhooks for alerting. Chose Kafka over RabbitMQ for throughput at scale. 40% faster detection-to-notification. 50+ client customisations in 45 days.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Kafka</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Webhooks</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">REST APIs</span>
+          <span style="background:var(--green-dim);color:var(--green);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Java</span>
         </div>
       </div>
 
-      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--coral);padding:2rem">
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem">
+
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--coral);padding:1.75rem">
         <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--coral);margin-bottom:0.5rem;font-weight:500">Subscription &amp; Content Architecture</div>
-        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Breach Reporting Platform &mdash; F-Secure</div>
-        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Built a subscription service delivering real-time breach reports to 100,000+ users at 99.95% uptime. Integrated with a headless CMS for content management. Optimised database schema, cutting data retrieval times by 25% and supporting 30% user growth without additional resources. Implemented failure recovery strategies that reduced operational disruptions by 50%. Delivered 5 days ahead of a 45-day deadline.</p>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Java</span>
-          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Headless CMS</span>
-          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Spring Boot</span>
-          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">PostgreSQL</span>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.6rem">Breach Reporting for 100,000+ Users</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:0.8rem">Built a subscription service delivering real-time breach reports at 99.95% uptime. Integrated with headless CMS for content management. Optimised database schema cutting retrieval times by 25%, supporting 30% user growth. Failure recovery reduced disruptions by 50%. Delivered 5 days ahead of deadline.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Java</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Headless CMS</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Spring Boot</span>
+          <span style="background:var(--coral-dim);color:var(--coral);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">PostgreSQL</span>
         </div>
       </div>
 
-      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--purple);padding:2rem">
+      <div style="background:var(--bg2);border:1px solid var(--card-border);border-top:3px solid var(--purple);padding:1.75rem">
         <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--purple);margin-bottom:0.5rem;font-weight:500">AI System Design</div>
-        <div style="font-size:1rem;font-weight:500;color:var(--text);margin-bottom:0.8rem">Two-Tier LLM Optimisation Architecture &mdash; M.Sc. Thesis</div>
-        <p style="font-size:0.88rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:1rem">Applied the same architectural thinking to AI. Designed a two-tier model strategy: Claude Haiku for cheap, fast exploration (52,844 evaluations) and Claude Sonnet for expensive validation of top candidates. Five-stage progressive filtering pipeline that eliminated 95%+ of weak candidates early. The architecture decision itself &mdash; using model tiers strategically &mdash; is what made $51 work instead of $2,000+.</p>
-        <div style="display:flex;gap:0.5rem;flex-wrap:wrap">
-          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Claude Haiku</span>
-          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Claude Sonnet</span>
-          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">ROUGE-2</span>
-          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.7rem;padding:0.25rem 0.6rem;font-weight:500">Python</span>
+        <div style="font-size:0.95rem;font-weight:500;color:var(--text);margin-bottom:0.6rem">Two-Tier LLM Optimisation &mdash; $51 vs $2,000+</div>
+        <p style="font-size:0.85rem;color:var(--text2);font-weight:300;line-height:1.7;margin-bottom:0.8rem">Applied architectural thinking to AI. Two-tier model strategy: cheap model for exploration (52,844 evaluations), expensive model for validation of top candidates. Five-stage progressive filtering eliminated 95%+ weak candidates early. The architecture decision itself is what made $51 work.</p>
+        <div style="display:flex;gap:0.4rem;flex-wrap:wrap">
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Claude Haiku</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Claude Sonnet</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">ROUGE-2</span>
+          <span style="background:var(--purple-dim);color:var(--purple);font-size:0.65rem;padding:0.2rem 0.5rem;font-weight:500">Python</span>
         </div>
       </div>
 
@@ -589,7 +759,14 @@ footer a{color:var(--accent)}
   <div class="container fade-in">
     <div class="section-label">Connect</div>
     <div class="section-title">Let's build something together.</div>
-    <p style="font-size:1rem;color:var(--text2);font-weight:300;max-width:700px;line-height:1.8;margin-bottom:1rem">I've spent 17 years proving I can build. I went back to school at 37 because I believed the next decade of engineering would look nothing like the last. Now I'm looking for the kind of role where engineering depth meets strategic impact &mdash; where I can architect systems today, shape engineering culture for the long term, and think well beyond the next sprint. The right role will find its own title. Let's talk.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start">
+      <div>
+        <p style="font-size:1rem;color:var(--text2);font-weight:300;line-height:1.8;margin-bottom:1.5rem">I've spent 17 years proving I can build. I went back to school at 37 because I believed the next decade of engineering would look nothing like the last. Now I'm looking for the kind of role where engineering depth meets strategic impact &mdash; where I can architect systems today, shape engineering culture for the long term, and think well beyond the next sprint.</p>
+        <p style="font-size:1rem;color:var(--text2);font-weight:300;line-height:1.8;margin-bottom:1.5rem">The right role will find its own title. <strong style="color:var(--text)">Let's talk.</strong></p>
+
+      </div>
+      <div>
+        <div style="font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-weight:500">Reach me directly</div>
     <div class="connect-grid">
       <a href="mailto:vinodh.nagaraj@gmail.com" class="connect-card">
         <div class="icon">Email</div>
@@ -608,31 +785,56 @@ footer a{color:var(--accent)}
         <div class="label">@vinodhgowda</div>
       </a>
     </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2026 Vinodh Nagarajaiah &bull; Built with intention, not templates &bull; <a href="https://ariesbytes.com">ariesbytes.com</a></p>
+<footer style="padding:3rem 0;border-top:1px solid var(--card-border)">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.5rem">
+    <div style="display:flex;align-items:center;gap:14px">
+      <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="44" fill="none" stroke="var(--text3)" stroke-width="2"/>
+        <path d="M18 24L44 68" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/>
+        <circle cx="46" cy="44" r="7" fill="none" stroke="var(--blue)" stroke-width="2.5"/>
+        <circle cx="46" cy="44" r="3" fill="var(--blue)"/>
+        <path d="M52 24L52 68L76 24L76 68" stroke="var(--teal)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+      </svg>
+      <div>
+        <div style="font-family:var(--serif);font-size:0.95rem;color:var(--text)">vinodhn<span style="color:var(--accent);font-family:var(--font);font-weight:300">.dev</span></div>
+        <div style="font-size:0.7rem;color:var(--text3)">Designed with intention. Built with code.</div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:1.5rem">
+      <div id="visitor-count" style="font-size:0.7rem;color:var(--text3);display:flex;align-items:center;gap:0.5rem">
+        <span style="display:inline-block;width:6px;height:6px;background:var(--green);border-radius:50%"></span>
+        <span id="visitors-today">-</span> today &bull; <span id="visitors-total">-</span> total
+      </div>
+    </div>
+    <div style="font-size:0.7rem;color:var(--text3)">&copy; 2026 Vinodh Nagarajaiah</div>
   </div>
 </footer>
 
 <script>
-// Theme toggle — light is default
+// Theme toggle — light → warm → dark → light
 const toggle = document.getElementById('themeToggle');
 const html = document.documentElement;
 const saved = localStorage.getItem('theme');
 if (saved === 'dark') html.setAttribute('data-theme', 'dark');
-else if (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches) html.setAttribute('data-theme', 'dark');
+else if (saved === 'warm') html.setAttribute('data-theme', 'warm');
 
 toggle.addEventListener('click', () => {
-  const isDark = html.getAttribute('data-theme') === 'dark';
-  if (isDark) {
+  const current = html.getAttribute('data-theme');
+  let next;
+  if (!current) next = 'warm';
+  else if (current === 'warm') next = 'dark';
+  else next = null;
+  if (next) {
+    html.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  } else {
     html.removeAttribute('data-theme');
     localStorage.setItem('theme', 'light');
-  } else {
-    html.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
   }
 });
 
@@ -648,17 +850,38 @@ const observer = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) entry.target.classList.add('visible');
   });
 }, { threshold: 0.1 });
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+document.querySelectorAll('.fade-in').forEach(el => {
+  el.classList.add('animate');
+  observer.observe(el);
+});
 
-// Smooth scroll for nav links
+// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
-    const target = document.querySelector(a.getAttribute('href'));
-    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const t = document.querySelector(a.getAttribute('href'));
+    if (t) t.scrollIntoView({behavior:'smooth',block:'start'});
   });
 });
+
+// Visitor counter
+(function(){
+  fetch('/api/counter').then(r=>r.json()).then(d=>{
+    document.getElementById('visitors-today').textContent=d.today;
+    document.getElementById('visitors-total').textContent=d.total;
+  }).catch(()=>{
+    var t=new Date().toISOString().split('T')[0];
+    var d=JSON.parse(localStorage.getItem('vn-visits')||'{}');
+    if(!d.total)d.total=0;
+    if(d.lastDate!==t){d.today=0;d.lastDate=t;}
+    d.today++;d.total++;
+    localStorage.setItem('vn-visits',JSON.stringify(d));
+    document.getElementById('visitors-today').textContent=d.today;
+    document.getElementById('visitors-total').textContent=d.total;
+  });
+})();
 </script>
+<script defer src="/_vercel/insights/script.js"></script>
 
 </body>
 </html>
